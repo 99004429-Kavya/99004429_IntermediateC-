@@ -54,7 +54,7 @@ public:
      */
    ~Box()
    {
-       std::cout << "Destructor\n";
+      // std::cout << "Destructor\n";
    }
 };
 
@@ -71,6 +71,6 @@ int main()
     int array1[5][3] = {{1, 2, 9}, {5,9, 3 }, {3, 1, 6}, {1, 2, 6}, {2, 3, 4}};
     Box *par = new (array1) Box[5];
 
-    Box b_adrr[10];
+    Box b_adrr[12];
     b_adrr->construct(b_adrr, 12, 1, 4, 9);
 }
